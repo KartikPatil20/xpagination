@@ -54,7 +54,7 @@ function App() {
       <div className='pagination'>
         <button type='button' onClick={(e) => prevpage()} disabled = {page === 1 ? true : false}>Previous</button>
         <span className='page_number'>{page}</span>
-        <button type='button' onClick={(e)=> nextpage()} disabled = {page === Math.round(data.length/10) ? true : false}>Next</button>
+        <button type='button' onClick={(e)=> nextpage() }>Next</button>
       </div>
     </div>
   );
