@@ -21,6 +21,8 @@ function App() {
   const nextpage = () => {
     if( page < data.length/10){
       setPage(page + 1);
+    }else{
+      setPage(1);
     }
   }
 
