@@ -15,12 +15,12 @@ function App() {
 
 
   const prevpage = () => {
-    setPage(page - 1);
+    setPage((prevpage) => prevpage - 1);
   }
 
   const nextpage = () => {
     if( page < data.length/10){
-      setPage(page + 1);
+      setPage((nextpage) => nextpage + 1);
     }else{
       setPage(1);
     }
