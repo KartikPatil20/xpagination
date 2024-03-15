@@ -52,9 +52,9 @@ function App() {
         </tbody>
       </table>
       <div className='pagination'>
-        <button type='button' onClick={(e) => prevpage()} disabled = {page === 1 ? true : false}>Previous</button>
+        <button type='button' onClick={() => prevpage()} >Previous</button>
         <span className='page_number'>{page}</span>
-        <button type='button' onClick={(e)=> nextpage() }>Next</button>
+        <button type='button' onClick={()=> nextpage() }>Next</button>
       </div>
     </div>
   );
