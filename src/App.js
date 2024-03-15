@@ -15,7 +15,9 @@ function App() {
 
 
   const prevpage = () => {
-    setPage((prevpage) => prevpage - 1);
+    if(page > 1){
+      setPage((prevpage) => prevpage - 1);
+    }
   }
 
   const nextpage = () => {
